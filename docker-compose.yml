@@ -1,5 +1,4 @@
 version: "3.9"
-
 services:
   app:
     build:
@@ -7,7 +6,7 @@ services:
       args:
         API_KEY: ${API_KEY}
     ports:
-      - "8080:80"
+      - "8088:80"
     environment:
       - API_KEY=${API_KEY}
     env_file:
