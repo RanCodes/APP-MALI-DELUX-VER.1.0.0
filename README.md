@@ -30,4 +30,5 @@ View your app in AI Studio: https://ai.studio/apps/drive/1opEp8cgkWuI9LzxoNlv40L
    ```bash
    docker compose up --build
    ```
-3. Open the app at [http://localhost:8080](http://localhost:8080).
+3. Open the app at [http://localhost:8088](http://localhost:8088). This port avoids the ones already
+   in use by the existing MeLi containers shown in Docker Desktop.
