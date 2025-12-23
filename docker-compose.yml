@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+      args:
+        API_KEY: ${API_KEY}
+    ports:
+      - "${APP_PORT:-8088}:80"
+    environment:
+      - API_KEY=${API_KEY}
+    env_file:
+      - .env
